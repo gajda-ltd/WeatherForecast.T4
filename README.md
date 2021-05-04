@@ -24,6 +24,8 @@ TextTemplatingFileGenerator
     var nameSpace = project.Name + "." + currentDirectory;
 #>namespace <#= nameSpace #>
 {
+    using System;
+
     public sealed record WeatherForecast
     {
         public DateTime Date { get; set; }
